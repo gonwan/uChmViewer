@@ -55,9 +55,6 @@ jobs:
       fail-fast: false
       matrix:
         distr:
-          - name:       trixie
-            version:    13
-            extra_pack: ""
           - name:       bookworm
             version:    12
             extra_pack: ""
@@ -142,7 +139,6 @@ jobs:
       matrix:
         msystem:
           - mingw64
-          - mingw32
     defaults:
       run:
         shell: msys2 {0}
