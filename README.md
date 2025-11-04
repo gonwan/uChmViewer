@@ -13,7 +13,7 @@ This is a fork of the [kchmviewer](http://www.ulduzsoft.com/linux/kchmviewer) wi
 
 ## Overview
 
-KchmViewer is a chm (MS HTML help file format) and epub viewer, written in C++. Unlike most existing CHM viewers for Unix, it uses Trolltech Qt widget library, and does not depend on KDE or GNOME. It has full KDE Framework 5 support.
+KchmViewer is a chm (MS HTML help file format) and epub viewer, written in C++. Unlike most existing CHM viewers for Unix, it uses Trolltech Qt widget library, and does not depend on KDE or GNOME.
 
 The main advantage of KchmViewer is extended support for non-English languages. Unlike others, KchmViewer in most cases correctly detects chm file encoding, correctly shows tables of context of Russian, Korean, Chinese and Japanese help files. It also correctly searches text in non-English help files, including Korean, Chinese and Japanese.
 
@@ -24,13 +24,12 @@ KchmViewer is written by [Georgy Yunaev](https://github.com/gyunaev), and is lic
 
 Fixed a bug causing false detection of an external link and displaying the “Open link in external program” dialog box.
 
-Read more in the [release note](https://github.com/u-235/uchmviewer/releases/latest) and in the [news](NEWS.md).
+Read more in the [release note](https://github.com/eBookProjects/uChmViewer/releases/latest) and in the [news](NEWS.md).
 
 
 ## Features
 
 - Standalone viewer, depends on Qt 5 or Qt 6 only. Does not require KDE, GNOME or wxWidgets toolkit.
-- Could be optionally built with KDE Framework 5 support, using KDE dialogs.
 - Completely safe and harmless. JavaScript can be disabled in the settings, optionally warns you before opening an external web page, or switching to another help file.
 - Correctly detects and shows encoding of any valid chm file.
 - Correctly shows non-English chm files, including Cyrillic, Chinese, Japanese and others.

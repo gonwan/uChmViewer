@@ -1,7 +1,5 @@
 # Create and install translation files.
 
-cmake_minimum_required(VERSION 3.5)
-
 set(CATALOG_NAME uchmviewer)
 # The languages.txt file contains a list of locales.
 file(READ languages.txt LANGUAGES)
@@ -38,7 +36,7 @@ endif ()
 if (USE_GETTEXT)
     foreach (LANG ${LANGUAGES})
         set(CATALOG ${CMAKE_CURRENT_SOURCE_DIR}/${CATALOG_NAME}_${LANG}.po)
-        if(EXISTS ${CATALOG})
+        if(EXISTS "${CATALOG}")
             file(MAKE_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/${LANG}/LC_MESSAGES)
             set(GMO_FILE ${CMAKE_CURRENT_BINARY_DIR}/${LANG}/LC_MESSAGES/${CATALOG_NAME}.mo)
             list(APPEND GMO_LIST ${GMO_FILE})
